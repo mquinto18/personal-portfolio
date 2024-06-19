@@ -23,10 +23,10 @@ const About = () => {
           </h1>
           <div className="mt-4 space-y-4 text-base sm:text-lg md:text-xl lg:text-2xl font-Roboto">
             <p>
-              I am Jan Matthew Quinto A freelance frontend developer and web
-              designer helping startups all around the world gain their unfair
-              advantage. A freelance frontend developer and web designer helping
-              startups all around the world gain their unfair advantage.
+              A freelance frontend developer and web designer helping startups
+              all around the world gain their unfair advantage. A freelance
+              frontend developer and web designer helping startups all around
+              the world gain their unfair advantage.
             </p>
             <p>
               A freelance frontend developer and web designer helping startups
@@ -57,11 +57,10 @@ const About = () => {
           data-aos-duration="1000"
           className="w-full md:w-auto mt-6 md:mt-0 flex justify-center"
         >
-          <div className="bg-[#FF4747] rounded-full w-[300px] h-[300px] ml-[-3rem] mt-[-1rem]"></div>
           <img
             src={myImage}
             alt="Me"
-            className="absolute rounded-full w-[300px] h-[300px] object-cover"
+            className="rounded-full w-[300px] h-[300px] object-cover"
           />
         </div>
       </div>

@@ -15,7 +15,7 @@ function Footer() {
         </div>
         <div className="flex flex-col md:flex-row gap-10 md:gap-20">
           <div className=" md:text-left">
-            <h1 className="font-medium text-[20px] pb-3">Main</h1>
+            <h1 className="font-medium text-[20px] pb-3">Navigation</h1>
             <div className="flex flex-col gap-2">
               {navLinks.map((navlink) => (
                 <NavFooterLink key={navlink.id} {...navlink} />
@@ -32,10 +32,15 @@ function Footer() {
               <a
                 href="https://drive.google.com/file/d/1ZFsUaQ0Fs6gvmxfpVy3rs7VQ_J34kIuF/view?usp=sharing"
                 className="flex md:justify-start"
+                target="_blank"
               >
                 <span>Resume</span>
                 <GoArrowUpRight className="ml-2" />
               </a>
+              <a href="">Instagram</a>
+              <a href="">Twitter</a>
+              <a href="">Facebook</a>
+              <a href="">Github</a>
             </div>
           </div>
         </div>

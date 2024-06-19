@@ -72,3 +72,18 @@
   transform: translateY(175px);
   transition: transform 0.5s;
 }
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
+  background-color: #ff4747;
+  border-radius: 50%;
+  pointer-events: none; /* Ensure the cursor does not interfere with clicks */
+  z-index: 9999; /* Ensure it appears above other elements */
+  transform: translate(-50%, -50%);
+  transition: all 0.1s ease; /* Add smooth transition */
+  mix-blend-mode: difference; /* Ensure cursor is visible on all backgrounds */
+}

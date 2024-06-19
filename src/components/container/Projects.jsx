@@ -1,55 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { GoLinkExternal } from "react-icons/go";
-import image1 from "../../assets/p1.png";
-import image2 from "../../assets/p2.png";
-import image3 from "../../assets/p5.png";
-import image4 from "../../assets/p4.png";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaReact, FaPhp } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { projects } from "../../Data";
 
 const Projects = () => {
   const [filter, setFilter] = useState("all");
-
-  const projects = [
-    {
-      id: 1,
-      type: "personal",
-      title: "Travel Website",
-      description:
-        "A freelance frontend developer and web designer helping startups all around the world gain their unfair advantage.",
-      image: image1,
-      link: "https://viewtravels.netlify.app/",
-    },
-    {
-      id: 2,
-      type: "personal",
-      title: "Travel Website",
-      description:
-        "A freelance frontend developer and web designer helping startups all around the world gain their unfair advantage.",
-      image: image2,
-      link: "https://e-clothingbrand.netlify.app/",
-    },
-    {
-      id: 3,
-      type: "client",
-      title: "Travel Website",
-      description:
-        "A freelance frontend developer and web designer helping startups all around the world gain their unfair advantage.",
-      image: image3,
-      link: "https://fashion-stylez.netlify.app/",
-    },
-    {
-      id: 4,
-      type: "client",
-      title: "Travel Website",
-      description:
-        "A freelance frontend developer and web designer helping startups all around the world gain their unfair advantage.",
-      image: image4,
-      link: "https://sneakershoe.netlify.app/",
-    },
-  ];
 
   const filteredProjects =
     filter === "all"
@@ -123,29 +82,63 @@ const Projects = () => {
           {filteredProjects.map((project) => (
             <div
               key={project.id}
-              className="border pb-5 rounded shadow-md hover:shadow-lg mb-5 md:mb-0"
+              className="border pb-5 rounded shadow-md hover:shadow-lg mb-5 md:mb-0 overflow-hidden"
               data-aos="fade-up"
               data-aos-duration="1000"
             >
-              <img
-                src={project.image}
-                alt={project.title}
-                className="rounded-tr-lg rounded-tl-lg w-full h-[220px] object-cover"
-              />
+              <div className="overflow-hidden cursor-pointer">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="rounded-tr-lg rounded-tl-lg w-full h-[220px] object-cover transform transition-transform duration-300 hover:scale-110"
+                />
+              </div>
               <div className="px-5">
                 <h1 className="font-bold mt-5 mb-3">{project.title}</h1>
                 <p className="text-sm text-slate-500">{project.description}</p>
-                <div className="float-right flex justify-center gap-3 text-[20px] pt-5">
-                  <a>
-                    <FaGithub />
-                  </a>
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <GoLinkExternal />
-                  </a>
+                <div className="flex justify-between text-[20px] pt-5">
+                  <div className="flex justify-center items-center gap-2 text-[20px]">
+                    <h1 className="text-[15px]">Tools:</h1>
+                    {project.type === "personal" ? (
+                      <>
+                        <FaReact className="text-xl" />
+                        <RiTailwindCssFill className="text-xl" />
+                      </>
+                    ) : project.type === "client" ? (
+                      <>
+                        <FaPhp className="text-xl" />
+                      </>
+                    ) : null}
+                  </div>
+                  <div className="flex gap-3">
+                    {project.type === "personal" && (
+                      <>
+                        <a
+                          href={project.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <FaGithub className="text-xl" />
+                        </a>
+                        <a
+                          href={project.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <GoLinkExternal className="text-xl" />
+                        </a>
+                      </>
+                    )}
+                    {project.type === "client" && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FaGithub className="text-xl" />
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>

@@ -35,7 +35,7 @@ const Home = () => {
           className="md:flex md:justify-center md:items-center md:gap-2 md:flex-row flex flex-col justify-center items-center gap-2"
         >
           <h1 className="font-Roboto">Kindly message me here</h1>
-          <a href="">
+          <a href="Contact.jsx">
             <button className="flex items-center space-x-2 border rounded-full py-1 px-4 hover:arrow-move">
               <span className="text-[12px] font-bold font-Roboto">
                 My Contacts

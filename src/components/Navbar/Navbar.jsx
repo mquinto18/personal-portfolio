@@ -42,7 +42,7 @@ const Navbar = () => {
             })}
           </div>
           {toggle && (
-            <div className="fixed inset-0 bg-white bg-opacity-30 backdrop-blur-lg">
+            <div className="fixed inset-0 bg-white bg-opacity-90 backdrop-blur-lg">
               <div className="absolute right-5 top-5 hover:bg-gray-200 p-2 cursor-pointer transition duration-300 ease-in-out">
                 <HiX
                   className="text-[30px] text-slate-500"

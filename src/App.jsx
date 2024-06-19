@@ -7,6 +7,7 @@ import {
   Projects,
   Footer,
 } from "./components/index";
+import CustomCursor from "./components/container/CustomCursor"; // Import the CustomCursor component
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Expertise />
       <Projects />
       <Footer />
+      <CustomCursor />
     </div>
   );
 }

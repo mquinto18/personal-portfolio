@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Mansalva&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .section {
+    @apply container mx-auto py-20  px-6;
+  }
+}
+@layer utilities {
+  .hover-line-through {
+    &:hover {
+      text-decoration: line-through;
+      text-decoration-color: #ff4747; /* Color of the line-through */
+    }
+  }
+}
+.hover\:arrow-move:hover .arrow-icon {
+  transform: translateX(5px);
+}
+.hover-text {
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-text h1 {
+  position: relative;
+  z-index: 1;
+  transition: color 0.6s ease; /* Slower and smoother transition */
+  margin: 0; /* Ensure no additional margins that might disrupt layout */
+}
+
+.hover-text::before,
+.hover-text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background: #ff4747; /* Adjust this color as needed */
+  z-index: 0;
+  transition: transform 0.6s ease; /* Slower and smoother transition */
+}
+
+.hover-text::before {
+  left: 0;
+  transform: translateX(-100%);
+}
+
+.hover-text::after {
+  right: 0;
+  transform: translateX(100%);
+}
+
+.hover-text:hover::before,
+.hover-text:hover::after {
+  transform: translateX(0);
+}
+
+.hover-text:hover h1 {
+  color: white; /* Adjust the color as needed to contrast with the background */
+  text-decoration: none; /* Remove underline on hover */
+}
+.text-name {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.char {
+  transform: translateY(175px);
+  transition: transform 0.5s;
+}

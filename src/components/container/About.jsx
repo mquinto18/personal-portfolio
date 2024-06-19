@@ -23,10 +23,10 @@ const About = () => {
           </h1>
           <div className="mt-4 space-y-4 text-base sm:text-lg md:text-xl lg:text-2xl font-Roboto">
             <p>
-              A freelance frontend developer and web designer helping startups
-              all around the world gain their unfair advantage. A freelance
-              frontend developer and web designer helping startups all around
-              the world gain their unfair advantage.
+              I am Jan Matthew Quinto A freelance frontend developer and web
+              designer helping startups all around the world gain their unfair
+              advantage. A freelance frontend developer and web designer helping
+              startups all around the world gain their unfair advantage.
             </p>
             <p>
               A freelance frontend developer and web designer helping startups

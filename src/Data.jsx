@@ -46,6 +46,7 @@ export const projects = [
       "A static landing page for a travel website featuring visually appealing destination images and promoting travel adventures. It offers an overview of services in a simple, mobile-friendly layout.",
     image: image1,
     link: "https://viewtravels.netlify.app/",
+    github: "https://github.com/mquinto18/my-travel.git",
     url: vid1,
   },
   {
@@ -56,6 +57,7 @@ export const projects = [
       "A static landing page for a clothing website featuring stylish images of trendy apparel. It highlights the latest fashion trends and provides a simple layout for easy navigation across various product categories.",
     image: image2,
     link: "https://e-clothingbrand.netlify.app/",
+    github: "https://github.com/mquinto18/my-clothing.git",
     url: vid1,
   },
   {
@@ -66,6 +68,7 @@ export const projects = [
       "A static landing page for a fashion website showcasing stylish images of clothing and accessories. It provides an overview of products and categories in a clean, mobile-friendly layout.",
     image: image3,
     link: "https://fashion-stylez.netlify.app/",
+    github: "https://github.com/mquinto18/my-fashion.git",
     url: vid1,
   },
   {
@@ -76,6 +79,7 @@ export const projects = [
       "This static landing page website features sneakers, encouraging users to explore and purchase the latest footwear. It showcases a stylish design with a focus on comfort and fashion.",
     image: image4,
     link: "https://sneakershoe.netlify.app/",
+    github: "https://github.com/mquinto18/my-sneaker.git",
     url: vid1,
   },
   {
@@ -86,6 +90,7 @@ export const projects = [
       "A tools and equipment monitoring system tracks usage and location, allowing users to borrow and return items efficiently. It ensures accurate inventory management and accountability.",
     image: image6,
     link: "https://sneakershoe.netlify.app/",
+    github: "https://github.com/mquinto18/samson.git",
     url: vid1,
   },
   {
@@ -96,6 +101,7 @@ export const projects = [
       "Clothing e-commerce involves selling apparel online, offering a wide variety of styles to customers. It provides the convenience of shopping from home with detailed product descriptions.",
     image: image7,
     link: "https://sneakershoe.netlify.app/",
+    github: "https://github.com/mquinto18/grace_street.git",
     url: vid1,
   },
   {
@@ -106,6 +112,7 @@ export const projects = [
       "An event booking system for a church enables users to easily reserve dates and times for events such as weddings and baptisms, and other ceremonies or gatherings.",
     image: image8,
     link: "https://sneakershoe.netlify.app/",
+    github: "",
     url: vid1,
   },
   {
@@ -116,6 +123,7 @@ export const projects = [
       "A loan management system helps manage loans from application to repayment, ensuring smooth processing and clear communication between borrowers and lenders",
     image: image9,
     link: "https://sneakershoe.netlify.app/",
+    github: "",
     url: vid1,
   },
   {
@@ -126,6 +134,7 @@ export const projects = [
       "A gym management system is a website where users can sign up for memberships, pay fees, and manage their gym account online, offering convenient access to gym services and facilities.",
     image: image10,
     link: "https://sneakershoe.netlify.app/",
+    github: "",
     url: vid1,
   },
 ];

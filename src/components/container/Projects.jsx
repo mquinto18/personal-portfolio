@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { GoLinkExternal } from "react-icons/go";
 import { FaGithub, FaReact, FaPhp } from "react-icons/fa";
+import { SiMysql } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -106,7 +107,8 @@ const Projects = () => {
                       </>
                     ) : project.type === "client" ? (
                       <>
-                        <FaPhp className="text-xl" />
+                        <FaPhp className="text-[30px]" />
+                        <SiMysql className="text-[30px]" />
                       </>
                     ) : null}
                   </div>

@@ -77,8 +77,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 50px; /* Adjust size as needed */
-  height: 50px; /* Adjust size as needed */
+  width: 40px; /* Adjust size as needed */
+  height: 40px; /* Adjust size as needed */
   background-color: #ff4747;
   border-radius: 50%;
   pointer-events: none; /* Ensure the cursor does not interfere with clicks */

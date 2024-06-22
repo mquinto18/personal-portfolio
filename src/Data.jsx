@@ -112,7 +112,7 @@ export const projects = [
       "An event booking system for a church enables users to easily reserve dates and times for events such as weddings and baptisms, and other ceremonies or gatherings.",
     image: image8,
     link: "https://sneakershoe.netlify.app/",
-    github: "",
+    github: "https://github.com/mquinto18/sacred-heart.git",
     url: vid1,
   },
   {
@@ -123,7 +123,7 @@ export const projects = [
       "A loan management system helps manage loans from application to repayment, ensuring smooth processing and clear communication between borrowers and lenders",
     image: image9,
     link: "https://sneakershoe.netlify.app/",
-    github: "",
+    github: "https://github.com/mquinto18/loan-Management-system.git",
     url: vid1,
   },
   {
@@ -134,7 +134,7 @@ export const projects = [
       "A gym management system is a website where users can sign up for memberships, pay fees, and manage their gym account online, offering convenient access to gym services and facilities.",
     image: image10,
     link: "https://sneakershoe.netlify.app/",
-    github: "",
+    github: "https://github.com/mquinto18/gym-management.git",
     url: vid1,
   },
 ];

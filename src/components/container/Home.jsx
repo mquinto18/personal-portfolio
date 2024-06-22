@@ -35,7 +35,7 @@ const Home = () => {
           className="md:flex md:justify-center md:items-center md:gap-2 md:flex-row flex flex-col justify-center items-center gap-2"
         >
           <h1 className="font-Roboto">Kindly message me here</h1>
-          <a href="Contact.jsx">
+          <a href="">
             <button className="flex items-center space-x-2 border rounded-full py-1 px-4 hover:arrow-move">
               <span className="text-[12px] font-bold font-Roboto">
                 My Contacts
@@ -56,8 +56,8 @@ const Home = () => {
           </div>
           <div data-aos="fade-up" data-aos-duration="1000">
             <p className="text-base font-Roboto sm:text-lg md:text-xl lg:text-2xl max-w-[600px] w-full mx-auto">
-              A freelance frontend developer and web designer helping startups
-              all around the world gain their unfair advantage.
+              A student developer offering commissioned services and providing
+              project assistance to students.
             </p>
             <div className="flex items-center justify-center pt-5 gap-2">
               <a href="">

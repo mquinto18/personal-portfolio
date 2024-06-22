@@ -8,15 +8,17 @@ import {
   Footer,
 } from "./components/index";
 import CustomCursor from "./components/container/CustomCursor"; // Import the CustomCursor component
+import Contact from "./components/container/Contact";
 
 function App() {
   return (
-    <div className="">
+    <div className="app-container">
       <Navbar />
       <Home />
       <About />
       <Expertise />
       <Projects />
+      <Contact />
       <Footer />
       <CustomCursor />
     </div>

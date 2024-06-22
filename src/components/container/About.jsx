@@ -81,8 +81,9 @@ const About = () => {
             />
             <h1 className="font-bold mt-5 mb-3">UI/UX Design</h1>
             <p className="text-sm text-slate-500">
-              A freelance frontend developer and web designer helping startups
-              all around the world gain their unfair advantage.
+              I create visually appealing, user-friendly interfaces for websites
+              and applications. My work enhances user experience through
+              thoughtful and intuitive design elements.
             </p>
           </div>
           <div
@@ -97,8 +98,9 @@ const About = () => {
             />
             <h1 className="font-bold mt-5 mb-3">Web Development</h1>
             <p className="text-sm text-slate-500">
-              A freelance frontend developer and web designer helping startups
-              all around the world gain their unfair advantage.
+              I build and maintain websites to be functional, responsive, and
+              visually appealing, optimizing for the best user experience
+              through coding and design.
             </p>
           </div>
           <div
@@ -113,8 +115,9 @@ const About = () => {
             />
             <h1 className="font-bold mt-5 mb-3">Graphic Design</h1>
             <p className="text-sm text-slate-500">
-              A freelance frontend developer and web designer helping startups
-              all around the world gain their unfair advantage.
+              I create visually captivating designs for websites, print, and
+              digital media. My work combines creativity and technical skill to
+              communicate ideas effectively.
             </p>
           </div>
         </div>

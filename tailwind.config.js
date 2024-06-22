@@ -7,7 +7,17 @@ export default {
       Roboto: "Roboto",
       Anton: "Anton",
     },
-    extend: {},
+    extend: {
+      animation: {
+        float: "float 3s ease-in-out infinite",
+      },
+      keyframes: {
+        float: {
+          "0%, 100%": { transform: "translateY(0) rotate(0deg)" },
+          "50%": { transform: "translateY(-20px) rotate(12deg)" },
+        },
+      },
+    },
     screens: {
       xs: "480px",
       sm: "768px",

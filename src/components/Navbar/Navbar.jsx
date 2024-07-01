@@ -1,12 +1,24 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { navLinks } from "../../Data";
 import { HiMenuAlt1, HiX } from "react-icons/hi";
 import NavLink from "./NavLink";
 import MobileNavLink from "./MobileNavLink";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+
+gsap.registerPlugin(useGSAP);
 
 const Navbar = () => {
+  const container = useRef();
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+
+  useGSAP(
+    () => {
+      gsap.to(".logo", { x: 100 });
+    },
+    { scope: container }
+  );
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,16 +42,22 @@ const Navbar = () => {
       <div>
         <div className="container py-4 mx-auto flex items-center justify-between">
           <div className="flex justify-between items-center w-full px-5">
-            <div className="text-[2rem] font-Mansalva">M</div>
+            <div className="text-[2rem] font-Mansalva">
+              <a href="" className="logo">
+                M
+              </a>
+            </div>
             <HiMenuAlt1
               className="text-3xl sm:hidden cursor-pointer"
               onClick={() => setToggle(true)}
             />
           </div>
-          <div className="sm:flex items-center hidden">
-            {navLinks.map((navlink) => {
-              return <NavLink key={navlink.id} {...navlink} />;
-            })}
+          <div className="flex-1 flex justify-center">
+            <ul className="list-none sm:flex hidden justify-center items-center gap-10">
+              {navLinks.map((navlink) => (
+                <Navlinks key={navlink.id} {...navlink} />
+              ))}
+            </ul>
           </div>
           {toggle && (
             <div className="fixed inset-0 bg-white bg-opacity-90 backdrop-blur-lg">

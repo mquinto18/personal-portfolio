@@ -12,8 +12,8 @@ import vid1 from "./assets/video1.mp4";
 export const navLinks = [
   {
     id: 1,
-    href: "home",
-    link: "Home",
+    href: "main",
+    link: "main",
   },
   {
     id: 2,
@@ -45,7 +45,7 @@ export const projects = [
     description:
       "A static landing page for a travel website featuring visually appealing destination images and promoting travel adventures. It offers an overview of services in a simple, mobile-friendly layout.",
     image: image1,
-    link: "https://viewtravels.netlify.app/",
+    link: "https://viewtravel.netlify.app/",
     github: "https://github.com/mquinto18/my-travel.git",
     url: vid1,
   },

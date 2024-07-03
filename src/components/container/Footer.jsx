@@ -17,9 +17,11 @@ function Footer() {
           <div className=" md:text-left">
             <h1 className="font-medium text-[20px] pb-3">Navigation</h1>
             <div className="flex flex-col gap-2">
-              {navLinks.map((navlink) => (
-                <NavFooterLink key={navlink.id} {...navlink} />
-              ))}
+              {navLinks
+                .filter((navlink) => navlink.link !== "Contact")
+                .map((navlink) => (
+                  <NavFooterLink key={navlink.id} {...navlink} />
+                ))}
             </div>
           </div>
           <div className=" md:text-left">
@@ -37,10 +39,10 @@ function Footer() {
                 <span>Resume</span>
                 <GoArrowUpRight className="ml-2" />
               </a>
-              <a href="">Instagram</a>
-              <a href="">Twitter</a>
-              <a href="">Facebook</a>
-              <a href="">Github</a>
+              <a href="https://www.instagram.com/matchu_q/?hl=en">Instagram</a>
+              <a href="https://x.com/tebulats_">Twitter</a>
+              <a href="https://www.facebook.com/matthew.quinto.52">Facebook</a>
+              <a href="https://github.com/mquinto18">Github</a>
             </div>
           </div>
         </div>

@@ -23,15 +23,11 @@ const About = () => {
           </h1>
           <div className="mt-4 space-y-4 text-base sm:text-lg md:text-xl lg:text-2xl font-Roboto">
             <p>
-              A freelance frontend developer and web designer helping startups
-              all around the world gain their unfair advantage. A freelance
-              frontend developer and web designer helping startups all around
-              the world gain their unfair advantage.
-            </p>
-            <p>
-              A freelance frontend developer and web designer helping startups
-              all around the world gain their unfair advantage. A freelance
-              frontend developer and web designer.
+              Hi there! I'm Matthew Quinto, a passionate student developer and
+              designer. I specialize in web development and design, focusing on
+              creating intuitive and visually appealing websites. My mission is
+              to help fellow students with their web development projects by
+              offering my expertise in both design and coding.
             </p>
             <div className="flex gap-4">
               <a

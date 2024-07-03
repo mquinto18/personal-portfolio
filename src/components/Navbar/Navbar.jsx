@@ -54,9 +54,11 @@ const Navbar = () => {
           </div>
           <div className="flex-1 flex justify-center">
             <ul className="list-none sm:flex hidden justify-center items-center gap-10">
-              {navLinks.map((navlink) => (
-                <Navlinks key={navlink.id} {...navlink} />
-              ))}
+              {navLinks
+                .filter((navlink) => navlink.link !== "Contact")
+                .map((navlink) => (
+                  <NavLink key={navlink.id} {...navlink} />
+                ))}
             </ul>
           </div>
           {toggle && (

@@ -7,13 +7,14 @@ import image7 from "./assets/p7.png";
 import image8 from "./assets/p8.png";
 import image9 from "./assets/p9.png";
 import image10 from "./assets/p10.png";
+import image11 from "./assets/p11.png";
 import vid1 from "./assets/video1.mp4";
 
 export const navLinks = [
   {
     id: 1,
-    href: "main",
-    link: "main",
+    href: "home",
+    link: "Home",
   },
   {
     id: 2,
@@ -32,7 +33,7 @@ export const navLinks = [
   },
   {
     id: 5,
-    href: "contact",
+    href: "#contact",
     link: "Contact",
   },
 ];
@@ -52,12 +53,12 @@ export const projects = [
   {
     id: 2,
     type: "personal",
-    title: "Clothing Website",
+    title: "Security Website",
     description:
-      "A static landing page for a clothing website featuring stylish images of trendy apparel. It highlights the latest fashion trends and provides a simple layout for easy navigation across various product categories.",
-    image: image2,
-    link: "https://e-clothingbrand.netlify.app/",
-    github: "https://github.com/mquinto18/my-clothing.git",
+      "A static landing page for a security system website featuring high-quality images of advanced equipment and the latest security technology. The layout ensures easy navigation across product categories.",
+    image: image11,
+    link: "https://securitywebpage.netlify.app/",
+    github: "https://github.com/mquinto18/security-website.git",
     url: vid1,
   },
   {

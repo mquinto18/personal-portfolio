@@ -4,9 +4,22 @@ import { GoArrowUpRight } from "react-icons/go";
 import AOS from "aos";
 import gsap from "gsap";
 import SplitType from "split-type";
+import { navLinks } from "../../Data";
 const Home = () => {
   const homeRef = useRef(null);
   const textRef = useRef(null);
+  const contactLink = navLinks.find((navlink) => navlink.link === "Contact");
+
+  const handleScroll = (event) => {
+    event.preventDefault();
+    if (contactLink) {
+      const contactSection = document.querySelector(contactLink.href);
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
+
   AOS.init();
 
   useEffect(() => {
@@ -35,7 +48,7 @@ const Home = () => {
           className="md:flex md:justify-center md:items-center md:gap-2 md:flex-row flex flex-col justify-center items-center gap-2"
         >
           <h1 className="font-Roboto">Kindly message me here</h1>
-          <a href="">
+          <a href={contactLink ? contactLink.href : "#"} onClick={handleScroll}>
             <button className="flex items-center space-x-2 border rounded-full py-1 px-4 hover:arrow-move">
               <span className="text-[12px] font-bold font-Roboto">
                 My Contacts

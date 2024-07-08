@@ -10,6 +10,70 @@ import image10 from "./assets/p10.png";
 import image11 from "./assets/p11.png";
 import vid1 from "./assets/video1.mp4";
 
+import icon1 from "./assets/html.png";
+import icon2 from "./assets/css.png";
+import icon3 from "./assets/tailwind.png";
+import icon4 from "./assets/js.png";
+import icon5 from "./assets/react.png";
+import icon6 from "./assets/node.png";
+import icon7 from "./assets/php.png";
+import icon8 from "./assets/git.png";
+import icon9 from "./assets/github.png";
+import icon10 from "./assets/figma.png";
+import icon11 from "./assets/mongodb.png";
+import icon12 from "./assets/mysql.png";
+
+export const toolIcons = [
+  {
+    id: 1,
+    icon: icon1,
+  },
+  {
+    id: 2,
+    icon: icon2,
+  },
+  {
+    id: 3,
+    icon: icon3,
+  },
+  {
+    id: 4,
+    icon: icon4,
+  },
+  {
+    id: 5,
+    icon: icon5,
+  },
+  {
+    id: 6,
+    icon: icon6,
+  },
+  {
+    id: 7,
+    icon: icon7,
+  },
+  {
+    id: 8,
+    icon: icon8,
+  },
+  {
+    id: 9,
+    icon: icon9,
+  },
+  {
+    id: 10,
+    icon: icon10,
+  },
+  {
+    id: 11,
+    icon: icon11,
+  },
+  {
+    id: 12,
+    icon: icon12,
+  },
+];
+
 export const navLinks = [
   {
     id: 1,

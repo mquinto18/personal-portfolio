@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { toast, ToastContainer } from "react-toastify";
+
 import "react-toastify/dist/ReactToastify.css";
 import { validateEmail } from "../utils/helper";
 
@@ -121,7 +122,7 @@ function Contact() {
                       name="message" // This should match the variable in your template
                       rows="4"
                       value={message}
-                      className={`font-medium w-full bg-transparent border-b py-2 focus:outline-none ${
+                      className={`font-medium w-full bg-transparent border py-2 focus:outline-none ${
                         messageError ? "border-red-500" : "border-slate-300"
                       }`}
                       onChange={(e) => setMessage(e.target.value)}

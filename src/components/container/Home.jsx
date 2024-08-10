@@ -81,7 +81,7 @@ const Home = () => {
               </a>
               <a
                 target="_blank"
-                href="https://drive.google.com/file/d/1ZFsUaQ0Fs6gvmxfpVy3rs7VQ_J34kIuF/view?usp=sharing"
+                href="https://drive.google.com/file/d/1wsziZcUA9YPL5EmmWjCBwLls3-Zxl_4H/view?usp=drive_link"
               >
                 <button className="flex font-Roboto items-center border rounded-full font-medium py-2 px-4">
                   <span>Resume</span>
